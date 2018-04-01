@@ -22,6 +22,9 @@
     "request": "^2.85.0",
     "semver": "^5.5.0"
   },
+  "devDependencies": {
+    "standard": "*"
+  },
   "scripts": {
     "test": "standard && echo \"Error: no test specified\" && exit 1"
   },
