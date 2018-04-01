@@ -12,14 +12,14 @@
   "main": "index.js",
   "engines": {
     "homebridge": "^0.4.38",
-    "node": "^8.10.0"
+    "node": "^8.11.1"
   },
   "dependencies": {
     "deferred": "^0.7.9",
     "fakegato-history": "^0.4.3",
-    "homebridge-hue-utils": "^0.4.6",
-    "moment": "^2.21.0",
-    "request": "^2.83.0",
+    "homebridge-hue-utils": "^0.4.7",
+    "moment": "^2.22.0",
+    "request": "^2.85.0",
     "semver": "^5.5.0"
   },
   "devDependencies": {
