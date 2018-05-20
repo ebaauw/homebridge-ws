@@ -15,12 +15,10 @@
     "node": "^8.11.2"
   },
   "dependencies": {
-    "deferred": "^0.7.9",
     "fakegato-history": "^0.5.1",
     "homebridge-hue-utils": "^0.4.12",
-    "moment": "^2.22.1",
-    "request": "^2.86.0",
-    "semver": "^5.5.0"
+    "homebridge-lib": "^0.0.2-0",
+    "moment": "^2.22.1"
   },
   "devDependencies": {
     "standard": "*"

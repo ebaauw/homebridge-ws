@@ -5,10 +5,9 @@
 
 'use strict'
 
-const WSPlatformModule = require('./lib/WSPlatform')
-const WSPlatform = WSPlatformModule.WSPlatform
+const WSPlatform = require('./lib/WSPlatform')
+const packageJson = require('./package.json')
 
 module.exports = function (homebridge) {
-  WSPlatformModule.setHomebridge(homebridge)
-  homebridge.registerPlatform('homebridge-ws', 'WS', WSPlatform)
+  WSPlatform.loadPlatform(homebridge, packageJson, 'WS', WSPlatform)
 }
