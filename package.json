@@ -15,8 +15,7 @@
     "node": "^8.11.2"
   },
   "dependencies": {
-    "homebridge-hue-utils": "^1.0.0-1",
-    "homebridge-lib": "^1.0.0-0",
+    "homebridge-lib": "^1.0.0-1",
     "moment": "^2.22.1"
   },
   "devDependencies": {
