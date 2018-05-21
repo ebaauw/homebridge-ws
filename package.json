@@ -15,9 +15,8 @@
     "node": "^8.11.2"
   },
   "dependencies": {
-    "fakegato-history": "^0.5.1",
-    "homebridge-hue-utils": "^0.4.12",
-    "homebridge-lib": "^0.0.2-0",
+    "homebridge-hue-utils": "^1.0.0-1",
+    "homebridge-lib": "^1.0.0-0",
     "moment": "^2.22.1"
   },
   "devDependencies": {
