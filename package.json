@@ -15,8 +15,8 @@
     "node": "^8.11.2"
   },
   "dependencies": {
-    "homebridge-lib": "^1.0.0-1",
-    "moment": "^2.22.1"
+    "homebridge-lib": "^1.0.0",
+    "moment": "^2.22.2"
   },
   "devDependencies": {
     "standard": "*"
