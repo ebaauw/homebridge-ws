@@ -10,14 +10,14 @@ This experimental [homebridge](https://github.com/nfarina/homebridge) plugin exp
 There's many other weather station plugins out there.  I created this one for fun and for testing plugin designs.
 
 ### Configuration
-In homebridge's `config.json` you need to specify homebridge-ws as a platform plugin.  Furthermore, you need to specify the name of the virtual weather station, your Wunderground [API key](https://www.wunderground.com/weather/api/d/pricing.html), and your Wunderground [location](https://www.wunderground.com/weather/api/d/docs?d=data/geolookup&MR=1#location):
+In homebridge's `config.json` you need to specify homebridge-ws as a platform plugin.  Furthermore, you need to specify your Wunderground [API key](https://www.wunderground.com/weather/api/d/pricing.html), and your Wunderground [location(s)](https://www.wunderground.com/weather/api/d/docs?d=data/geolookup&MR=1#location):
 ```json
   "platforms": [
     {
       "platform": "WS",
       "name": "Weather",
       "apikey": "xxxxxxxxxxxxxxxx",
-      "location": "AMS"
+      "locations": ["AMS"]
     }
   ]
 ```
