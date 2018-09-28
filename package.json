@@ -15,7 +15,7 @@
     "node": "^8.12.0"
   },
   "dependencies": {
-    "homebridge-lib": "^1.0.8",
+    "homebridge-lib": "^1.0.9",
     "moment": "^2.22.2"
   },
   "scripts": {
