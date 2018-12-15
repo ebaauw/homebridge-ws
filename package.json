@@ -12,10 +12,10 @@
   "main": "index.js",
   "engines": {
     "homebridge": "^0.4.45",
-    "node": "^10.13.0"
+    "node": "^10.14.1"
   },
   "dependencies": {
-    "homebridge-lib": "^2.0.0"
+    "homebridge-lib": "~3.0.0"
   },
   "scripts": {
     "test": "standard && echo \"Error: no test specified\" && exit 1"
