@@ -15,7 +15,8 @@
     "node": "^10.14.2"
   },
   "dependencies": {
-    "homebridge-lib": "~3.0.1"
+    "homebridge-lib": "~3.1.1",
+    "moment": "~2.22.2"
   },
   "scripts": {
     "test": "standard && echo \"Error: no test specified\" && exit 1"
