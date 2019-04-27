@@ -16,10 +16,8 @@ In homebridge's `config.json` you need to specify homebridge-ws as a platform pl
     {
       "platform": "WS",
       "name": "Weather",
-      "openweathermap": {
-        "apikey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "locations": ["Amsterdam"]
-      }
+      "apikey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "locations": ["Amsterdam"]
     }
   ]
 ```
