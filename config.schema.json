@@ -1,0 +1,28 @@
+{
+	"pluginAlias": "WS",
+	"pluginType": "platform",
+	"schema": {
+		"type": "object",
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string",
+				"required": true,
+				"default": "Weather"
+			},
+			"apikey": {
+				"title": "OpenWeatherMap API key",
+				"type": "string",
+				"required": true
+			},
+			"locations": {
+				"title": "Locations",
+				"type": "array",
+				"items": {
+					"type": "string",
+					"default": "Amsterdam"
+				}
+			}
+		}
+	}
+}
