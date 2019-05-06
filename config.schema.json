@@ -1,0 +1,42 @@
+{
+  "pluginAlias": "WS",
+  "pluginType": "platform",
+  "headerDisplay": "Homebridge plugin for virtual weather station",
+  "footerDisplay": "Get your OpenWeatherMap API key [here](https://openweathermap.org/price).<br>For a list of valid OpenWeatherMap city names, look [here](https://openweathermap.org/current).",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+	"description": "Plugin name as displayed in the homebridge log.",
+        "type": "string",
+        "required": true,
+        "default": "Weather"
+      },
+      "apikey": {
+        "title": "API key",
+	"description": "OpenWeatherMap API key (see below).",
+        "type": "string",
+	"required": true,
+	"pattern": "^[0-9a-f]{32}$"
+      },
+      "locations": {
+        "title": "City Names",
+        "type": "array",
+	"required": true,
+        "items": {
+	  "title": "City Name",
+	  "description": "OpenWeatherMap city name (see below).",
+          "type": "string"
+        }
+      },
+      "timeout": {
+        "title": "Timeout",
+	"description": "Timeout in seconds.  Default: 15.",
+	"type": "integer",
+	"minimum": 1,
+	"maximum": 60
+      }
+    }
+  }
+}
