@@ -9,6 +9,13 @@ This [homebridge](https://github.com/nfarina/homebridge) plugin exposes a virtua
 
 There's many other weather station plugins out there.  I created this one for fun and for testing plugin designs.  In particular, this plugin is the launching plugin for [homebridge-lib](https://github.com/ebaauw/homebridge-lib).
 
+### Installation
+To install homebridge-ws, use:
+```
+$ npm -g i hblib
+$ npm -g i homebridge-ws
+```
+
 ### Configuration
 In homebridge's `config.json` you need to specify homebridge-ws as a platform plugin.  Furthermore, you need to specify your OpenWeatherMap [API key](https://openweathermap.org/price), and [location(s)](https://openweathermap.org/current):
 ```json
