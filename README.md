@@ -12,8 +12,7 @@ There's many other weather station plugins out there.  I created this one for fu
 ### Installation
 To install homebridge-ws, use:
 ```
-$ npm -g i hblib
-$ npm -g i homebridge-ws
+$ npm -g i hblib homebridge-ws
 ```
 
 ### Configuration
