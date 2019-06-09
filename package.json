@@ -11,11 +11,13 @@
   ],
   "main": "index.js",
   "engines": {
-    "homebridge": "^0.4.49",
+    "homebridge": "^0.4.50",
     "node": "^10.16.0"
   },
+  "peerDependencies": {
+    "homebridge-lib": "~4.2.6"
+  },
   "dependencies": {
-    "homebridge-lib": "~4.2.5",
     "moment": "~2.24.0"
   },
   "scripts": {
