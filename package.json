@@ -15,7 +15,7 @@
     "node": "^10.16.0"
   },
   "peerDependencies": {
-    "homebridge-lib": "~4.2.8"
+    "homebridge-lib": "~4.2.9"
   },
   "dependencies": {
     "moment": "~2.24.0"
