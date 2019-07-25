@@ -10,9 +10,9 @@ This [homebridge](https://github.com/nfarina/homebridge) plugin exposes one or m
 There's many other weather station plugins out there.  I created this one for fun and for testing plugin designs.  In particular, this plugin is the launching plugin for [homebridge-lib](https://github.com/ebaauw/homebridge-lib).
 
 ### Installation
-As `homebridge-ws` is built using `homebridge-lib`, the latter must be installed as a peer dependency:
+To install homebridge-ws, use:
 ```
-$ sudo npm -g i homebridge-lib homebridge-ws
+$ sudo npm -g i homebridge-ws
 ```
 
 ### Configuration
