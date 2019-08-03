@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// homebridge-ws/lib/json.js
+// homebridge-ws/cli/json.js
 // Copyright © 2019 Erik Baauw. All rights reserved.
 //
 // Homebridge plugin for virtual weather station.

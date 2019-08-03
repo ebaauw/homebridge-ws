@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// homebridge-ws/lib/upnp.js
+// homebridge-ws/cli/upnp.js
 // Copyright © 2019 Erik Baauw. All rights reserved.
 //
 // Homebridge plugin for virtual weather station.
