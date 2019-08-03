@@ -20,10 +20,11 @@
     "node": "^10.16.1"
   },
   "dependencies": {
-    "homebridge-lib": "~4.4.1-0",
+    "homebridge-lib": "~4.4.2",
     "moment": "~2.24.0"
   },
   "scripts": {
+    "prepare": "standard",
     "test": "standard && echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
