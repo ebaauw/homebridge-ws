@@ -10,12 +10,17 @@
     "weather"
   ],
   "main": "index.js",
+  "bin": {
+    "hap": "cli/hap.js",
+    "json": "cli/json.js",
+    "upnp": "cli/upnp.js"
+  },
   "engines": {
     "homebridge": "^0.4.50",
-    "node": "^10.16.0"
+    "node": "^10.16.1"
   },
   "dependencies": {
-    "homebridge-lib": "~4.4.0",
+    "homebridge-lib": "~4.4.1-0",
     "moment": "~2.24.0"
   },
   "scripts": {
