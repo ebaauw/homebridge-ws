@@ -17,10 +17,10 @@
   },
   "engines": {
     "homebridge": "^0.4.50",
-    "node": "^10.16.1"
+    "node": "^10.16.2"
   },
   "dependencies": {
-    "homebridge-lib": "~4.4.2",
+    "homebridge-lib": "~4.4.3",
     "moment": "~2.24.0"
   },
   "scripts": {
