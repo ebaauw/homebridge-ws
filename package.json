@@ -1,6 +1,6 @@
 {
   "name": "homebridge-ws",
-  "version": "2.2.13",
+  "version": "2.2.14",
   "description": "Homebridge plugin for virtual weather station",
   "author": "Erik Baauw",
   "license": "Apache-2.0",
