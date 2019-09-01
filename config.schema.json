@@ -37,7 +37,33 @@
         "type": "integer",
         "minimum": 1,
         "maximum": 60
+      },
+      "noPressure": {
+        "title": "No Pressure",
+        "description": "Don't expose Pressure sensor.  Default: false.",
+        "type": "boolean"
+      },
+      "noHumidity": {
+        "title": "No Humidity",
+        "description": "Don't expose Humidity nor Pressure sensor.  Default: false.",
+        "type": "boolean"
       }
     }
-  }
+  },
+  "form": [
+    "name",
+    "apikey",
+    "locations",
+    {
+      "type": "fieldset",
+      "expandable": true,
+      "title": "Advanced Settings",
+      "description": "Don't change these, unless you understand what you're doing.",
+      "items": [
+        "timeout",
+        "noPressure",
+        "noHumidity"
+      ]
+    }
+  ]
 }
