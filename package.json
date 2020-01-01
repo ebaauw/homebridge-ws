@@ -20,7 +20,7 @@
     "node": "^12.14.0"
   },
   "dependencies": {
-    "homebridge-lib": "~4.4.9",
+    "homebridge-lib": "~4.4.10",
     "moment": "~2.24.0"
   },
   "scripts": {
