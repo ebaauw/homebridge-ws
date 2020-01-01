@@ -3,7 +3,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Homebridge plugin for virtual weather station
-Copyright © 2018-2019 Erik Baauw. All rights reserved.
+Copyright © 2018-2020 Erik Baauw. All rights reserved.
 
 This [homebridge](https://github.com/nfarina/homebridge) plugin exposes one or more virtual weather stations to Apple's [HomeKit](http://www.apple.com/ios/home/).  Each station mimics an Eve Degree, providing separate services for Temperature, Humidity, and Air Pressure.  Temperature and Humidity are supported Apple's [Home](https://support.apple.com/en-us/HT204893) app and by Siri.  For Air Pressure you need another app, like like [Eve](https://www.evehome.com/en/eve-app).  In Eve, you also get history for Temperature, Humidity and Air Pressure.  The weather is retrieved from [OpenWeatherMap](https://openweathermap.org).
 

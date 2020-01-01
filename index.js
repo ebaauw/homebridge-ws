@@ -1,5 +1,5 @@
 // homebridge-ws/index.js
-// Copyright © 2018-2019 Erik Baauw. All rights reserved.
+// Copyright © 2018-2020 Erik Baauw. All rights reserved.
 //
 // Homebridge plugin for virtual weather station.
 
