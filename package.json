@@ -10,11 +10,6 @@
     "weather"
   ],
   "main": "index.js",
-  "bin": {
-    "hap": "cli/hap.js",
-    "json": "cli/json.js",
-    "upnp": "cli/upnp.js"
-  },
   "engines": {
     "homebridge": "^0.4.50",
     "node": "^12.14.0"
