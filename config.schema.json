@@ -22,7 +22,7 @@
         "pattern": "^[0-9a-f]{32}$"
       },
       "locations": {
-        "title": "City Names",
+        "title": "City Name",
         "type": "array",
 	      "required": true,
         "items": {
@@ -70,9 +70,8 @@
           "items": [
             {
               "key": "locations[]",
-              "flex": "1 1 50px",
-              "notitle": true,
-              "placeholder": "Enter city name..."
+              "required": true,
+              "flex": "1 1 50px"
             }
           ]
         }
