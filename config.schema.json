@@ -53,7 +53,31 @@
   "form": [
     "name",
     "apikey",
-    "locations",
+    {
+      "type": "help",
+      "helpvalue": "City Names <strong class='text-danger'>*</strong>"
+    },
+    {
+      "nodescription": true,
+      "notitle": true,
+      "key": "locations",
+      "type": "array",
+      "items": [
+        {
+          "type": "div",
+          "displayFlex": true,
+          "flex-direction": "row",
+          "items": [
+            {
+              "key": "locations[]",
+              "flex": "1 1 50px",
+              "notitle": true,
+              "placeholder": "Enter city name..."
+            }
+          ]
+        }
+      ]
+    },
     {
       "type": "fieldset",
       "expandable": true,
