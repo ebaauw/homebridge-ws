@@ -16,7 +16,7 @@
 ## Homebridge plugin for virtual weather station
 Copyright © 2018-2020 Erik Baauw. All rights reserved.
 
-This [Homebridge](https://github.com/nfarina/homebridge) plugin exposes one or more virtual weather stations to Apple's [HomeKit](http://www.apple.com/ios/home/).  Each station mimics an Eve Degree, providing separate services for Temperature, Humidity, and Air Pressure.  Temperature and Humidity are supported Apple's [Home](https://support.apple.com/en-us/HT204893) app and by Siri.  For Air Pressure you need another app, like like [Eve](https://www.evehome.com/en/eve-app).  In Eve, you also get history for Temperature, Humidity and Air Pressure.  The weather is retrieved from [OpenWeatherMap](https://openweathermap.org).
+This [Homebridge](https://github.com/homebridge/homebridge) plugin exposes one or more virtual weather stations to Apple's [HomeKit](http://www.apple.com/ios/home/).  Each station mimics an Eve Degree, providing separate services for Temperature, Humidity, and Air Pressure.  Temperature and Humidity are supported Apple's [Home](https://support.apple.com/en-us/HT204893) app and by Siri.  For Air Pressure you need another app, like like [Eve](https://www.evehome.com/en/eve-app).  In Eve, you also get history for Temperature, Humidity and Air Pressure.  The weather is retrieved from [OpenWeatherMap](https://openweathermap.org).
 
 There's many other weather station plugins out there.  I created this one for fun and for testing plugin designs.  In particular, this plugin is the launching plugin for [homebridge-lib](https://github.com/ebaauw/homebridge-lib).
 
@@ -44,7 +44,7 @@ To install Homebridge WS:
 - Edit `config.json` and add the `WS` platform provided by Homebridge WS, see [**Configuration**](#configuration).
 
 ### Configuration
-In homebridge's `config.json` you need to specify Homebridge WS as a platform plugin.
+In Homebridge's `config.json` you need to specify Homebridge WS as a platform plugin.
 Furthermore, you need to specify your OpenWeatherMap [API key](https://openweathermap.org/price), and [location(s)](https://openweathermap.org/current):
 ```json
   "platforms": [
