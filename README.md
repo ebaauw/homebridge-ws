@@ -6,7 +6,7 @@
 # Homebridge WS
 [![Downloads](https://img.shields.io/npm/dt/homebridge-ws.svg)](https://www.npmjs.com/package/homebridge-ws)
 [![Version](https://img.shields.io/npm/v/homebridge-ws.svg)](https://www.npmjs.com/package/homebridge-ws)
-[![Homebridge Discord](https://img.shields.io/discord/432663330281226270?color=728ED5&logo=discord&label=discord)](https://discord.gg/hZubhrz)
+[![Homebridge Discord](https://img.shields.io/discord/432663330281226270?color=728ED5&logo=discord&label=discord)](https://discord.gg/aCTWrqb)
 [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
 
 [![GitHub issues](https://img.shields.io/github/issues/ebaauw/homebridge-ws)](https://github.com/ebaauw/homebridge-ws/issues)
@@ -58,6 +58,44 @@ Furthermore, you need to specify your OpenWeatherMap [API key](https://openweath
     }
   ]
 ```
+
+### Troubleshooting
+
+#### Check Dependencies
+If you run into Homebridge startup issues, please double-check what versions of Node.js and of Homebridge have been installed.
+Homebridge WS has been developed and tested using the [latest LTS](https://nodejs.org/en/about/releases/) version of Node.js and the [latest](https://www.npmjs.com/package/homebridge) version of Homebridge.
+Other versions might or might not work - I simply don't have the bandwidth to test these.
+
+#### Run Homebridge WS Solo
+If you run into Homebridge startup issues, please run a separate instance of Homebridge with only Homebridge WS (and Homebridge Config UI X) enabled in `config.json`.
+This way, you can determine whether the issue is related to Homebridge WS itself, or to the interaction of multiple Homebridge plugins in your setup.
+You can start this separate instance of Homebridge on a different system, as a different user, or from a different user directory (specified by the `-U` flag).
+Make sure to use a different Homebridge `name`, `username`, and (if running on the same system) `port` in the `config.json` for each instance.
+
+#### Debug Log File
+Homebridge WS outputs an info message for each HomeKit characteristic value it sets and for each HomeKit characteristic value change notification it receives.
+When Homebridge is started with `-D`, Homebridge WS outputs a debug message for each request it makes to OpenWeatherMap.
+
+To capture these messages into a log file do the following:
+- If you're running Homebridge as a service, stop that service;
+- Run Homebridge manually, capturing the output into a file, by issuing:
+  ```
+  $ homebridge -CD 2>&1 | tee homebridge.log
+  ```
+- Interact with your devices, through their native app and or through HomeKit to trigger the issue;
+- Hit interrupt (ctrl-C) to stop Homebridge;
+- If you're running Homebridge as a service, restart the service;
+- Compress the log file by issuing:
+  ```
+  $ gzip homebridge.log
+  ```
+
+#### Getting Help
+If you have a question, please post a message to the **#ws** channel of the Homebridge community on [Discord](https://discord.gg/aCTWrqb).
+
+If you encounter a problem, please open an issue on [GitHub](https://github.com/ebaauw/homebridge-ws/issues).
+Please **attach** a copy of `homebridge.log.gz` to the issue, see [**Debug Log File**](#debug-log-file).
+Please do **not** copy/paste large amounts of log output.
 
 ### Caveats
 Homebridge WS is a hobby project of mine, provided as-is, with no warranty whatsoever.  I've been running it successfully at my home for years, but your mileage might vary.
