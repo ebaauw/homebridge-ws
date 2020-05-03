@@ -12,12 +12,12 @@
   ],
   "main": "index.js",
   "engines": {
-    "homebridge": "~1.0.0||0.4.54-beta.54",
-    "node": "^12.16.2"
+    "homebridge": "~1.0.4",
+    "node": "^12.16.3"
   },
   "dependencies": {
-    "homebridge-lib": "~4.6.0",
-    "moment": "~2.24.0"
+    "homebridge-lib": "~4.6.1",
+    "moment": "~2.25.1"
   },
   "scripts": {
     "prepare": "standard",
