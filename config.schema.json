@@ -21,6 +21,20 @@
 	      "required": true,
         "pattern": "^[0-9a-f]{32}$"
       },
+      "dailyForecasts": {
+        "title": "Daily Forecasts",
+        "description": "Number of daily forecasts to expose.  Default: 0.",
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 7
+      },
+      "hourlyForecasts": {
+        "title": "Hourly Forecasts",
+        "description": "Number of hourly forecasts to expose.  Default: 0.",
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 47
+      },
       "locations": {
         "title": "City Name",
         "type": "array",
@@ -67,6 +81,8 @@
         }
       ]
     },
+    "dailyForecasts",
+    "hourlyForecasts",
     {
       "type": "fieldset",
       "expandable": true,
