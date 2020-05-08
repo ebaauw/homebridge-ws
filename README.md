@@ -18,9 +18,21 @@
 ## Homebridge plugin for virtual weather station
 Copyright © 2018-2020 Erik Baauw. All rights reserved.
 
-This [Homebridge](https://github.com/homebridge/homebridge) plugin exposes one or more virtual weather stations to Apple's [HomeKit](http://www.apple.com/ios/home/).  Each station mimics an Eve Degree, providing separate services for Temperature, Humidity, and Air Pressure.  Temperature and Humidity are supported Apple's [Home](https://support.apple.com/en-us/HT204893) app and by Siri.  For Air Pressure you need another app, like like [Eve](https://www.evehome.com/en/eve-app).  In Eve, you also get history for Temperature, Humidity and Air Pressure.  The weather is retrieved from [OpenWeatherMap](https://openweathermap.org).
+This [Homebridge](https://github.com/homebridge/homebridge) plugin exposes one or more virtual weather stations to Apple's [HomeKit](http://www.apple.com/ios/home/).
+The weather is obtained from [OpenWeatherMap](https://openweathermap.org).
 
-There's many other weather station plugins out there.  I created this one for fun and for testing plugin designs.  In particular, this plugin is the launching plugin for [homebridge-lib](https://github.com/ebaauw/homebridge-lib).
+Each weather station is exposed as a separate accessory, mimicking an Eve Degree, with separate services for Temperature, Humidity, and Air Pressure.
+In addition, Homebridge WS provides a Leak Sensor service, to receive HomeKit notifications for rain or snow.
+The Leak Sensor service contains a full weather report, including observation time, conditions, clouds, rain, snow, wind, min/max temperature, UV index, visibility, sunrise, and sunset.
+The Temperature, Humidity, and Leak sensors are supported Apple's [Home](https://support.apple.com/en-us/HT204893) app and by Siri.
+You need another HomeKit app, like [Eve](https://www.evehome.com/en/eve-app), for the Air Pressure sensor and the full weather report
+In Eve, you also get history for Temperature, Humidity and Air Pressure.
+
+Optionally, Homebridge WS exposes a second _Forecast_ accessory per location, with a Leak Sensor service per hourly or daily forecast.
+
+There are many other weather station plugins out there.
+I created this one for fun and for testing plugin designs.
+In particular, this plugin is the launching plugin for [homebridge-lib](https://github.com/ebaauw/homebridge-lib).
 
 ### Prerequisites
 You need to obtain an [API key](https://openweathermap.org/price) from OpenWeatherMap.
@@ -29,12 +41,12 @@ The free tier of the _Current weather and forecasts collection_ will do just fin
 You need a server to run Homebridge.
 This can be anything running [Node.js](https://nodejs.org): from a Raspberry Pi, a NAS system, or an always-on PC running Linux, macOS, or Windows.
 See the [Homebridge Wiki](https://github.com/homebridge/homebridge/wiki) for details.
-I run Homebridge ZP on a Raspberry Pi 3B+.
+I run Homebridge WS on a Raspberry Pi 3B+.
 
 To interact with HomeKit, you need Siri or a HomeKit app on an iPhone, Apple Watch, iPad, iPod Touch, or Apple TV (4th generation or later).
 I recommend to use the latest released versions of iOS, watchOS, and tvOS.  
 Please note that Siri and even Apple's [Home](https://support.apple.com/en-us/HT204893) app still provide only limited HomeKit support.
-To use the full features of Homebridge Zp, you might want to check out some other HomeKit apps, like the [Eve](https://www.evehome.com/en/eve-app) app (free) or Matthias Hochgatterer's [Home+](https://hochgatterer.me/home/) app (paid).  
+To use the full features of Homebridge WS, you might want to check out some other HomeKit apps, like the [Eve](https://www.evehome.com/en/eve-app) app (free) or Matthias Hochgatterer's [Home+](https://hochgatterer.me/home/) app (paid).  
 
 ### Installation
 To install Homebridge WS:
@@ -58,6 +70,12 @@ Furthermore, you need to specify your OpenWeatherMap [API key](https://openweath
     }
   ]
 ```
+
+To expose weather forecasts, set `"dailyForecasts": `_d_ (with _d_ between 1 and 7) or `"hourlyForcasts":` _h_ (with _h_ between 1 and 47) in config.json.
+When either has been set, Homebridge WS exposes an additional _Forecast_ accessory per location, with a Leak Sensor service per forecast.
+Home will only show _Leak Detected_ per forecast, in Eve you can see the full weather reports.
+
+Note that OpenWeatherMap's One Call API returns the current conditions and forecasts in a single API call, so enabling forecasts won't increase the number of outgoing API calls.  The rate at which OpenWeatherMap is called can be changed using the _Heartrate_ characteristic in the Leak Sensor service on the main accessory.
 
 ### Troubleshooting
 
