@@ -13,7 +13,7 @@
   "main": "index.js",
   "engines": {
     "homebridge": "~1.0.4",
-    "node": "^12.16.3"
+    "node": ">=12.16.3"
   },
   "dependencies": {
     "homebridge-lib": "~4.7.0",
