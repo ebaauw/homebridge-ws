@@ -13,10 +13,10 @@
   "main": "index.js",
   "engines": {
     "homebridge": "^1.1.0",
-    "node": "^12.18.2"
+    "node": "^12.18.3"
   },
   "dependencies": {
-    "homebridge-lib": "^4.7.12"
+    "homebridge-lib": "^4.7.14"
   },
   "scripts": {
     "prepare": "standard",
@@ -29,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/ebaauw/homebridge-ws/issues"
   },
-  "homepage": "https://github.com/ebaauw/homebridge-ws#readme"
+  "homepage": "https://github.com/ebaauw/homebridge-ws#readme",
+  "funding": {
+    "type": "paypal",
+    "url": "https://www.paypal.me/ebaauw/EUR"
+  }
 }
