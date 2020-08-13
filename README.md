@@ -12,7 +12,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/ebaauw/homebridge-ws)](https://github.com/ebaauw/homebridge-ws/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/ebaauw/homebridge-ws)](https://github.com/ebaauw/homebridge-ws/pulls)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Contribute](https://img.shields.io/badge/contribute-paypal%20me-brightgreen)](https://www.paypal.me/ebaauw/EUR)
+
 </span>
 
 ## Homebridge plugin for virtual weather station
