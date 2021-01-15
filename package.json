@@ -16,7 +16,7 @@
     "node": "^14.15.4"
   },
   "dependencies": {
-    "homebridge-lib": "~5.0.2"
+    "homebridge-lib": "~5.0.4"
   },
   "scripts": {
     "prepare": "standard",
