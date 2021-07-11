@@ -3,7 +3,7 @@
   "pluginType": "platform",
   "singular": true,
   "headerDisplay": "Homebridge plugin for virtual weather station",
-  "footerDisplay": "Get your OpenWeatherMap API key [here](https://openweathermap.org/price).<br>For a list of valid OpenWeatherMap city names, look [here](https://openweathermap.org/current).",
+  "footerDisplay": "Get your OpenWeatherMap API key [here](https://openweathermap.org/price).<br>For a list of valid OpenWeatherMap city names and IDs, look [here](https://openweathermap.org/current).",
   "schema": {
     "type": "object",
     "properties": {
@@ -20,6 +20,17 @@
         "type": "string",
 	      "required": true,
         "pattern": "^[0-9a-f]{32}$"
+      },
+      "cityIds": {
+        "title": "City ID",
+        "type": "array",
+        "required": true,
+        "items": {
+          "title": "City ID",
+          "description": "OpenWeatherMap city ID (see below).",
+          "type": "integer",
+          "minimum": 0
+        }
       },
       "dailyForecasts": {
         "title": "Daily Forecasts",
@@ -79,6 +90,26 @@
           "items": [
             {
               "key": "locations[]",
+              "required": true,
+              "flex": "1 1 50px"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nodescription": true,
+      "notitle": true,
+      "key": "cityIds",
+      "type": "array",
+      "items": [
+        {
+          "type": "div",
+          "displayFlex": true,
+          "flex-direction": "row",
+          "items": [
+            {
+              "key": "cityIds[]",
               "required": true,
               "flex": "1 1 50px"
             }
