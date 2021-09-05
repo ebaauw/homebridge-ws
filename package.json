@@ -4,7 +4,7 @@
   "displayName": "Homebridge WS",
   "author": "Erik Baauw",
   "license": "Apache-2.0",
-  "version": "2.5.8",
+  "version": "2.5.9",
   "keywords": [
     "homebridge-plugin",
     "homekit",
