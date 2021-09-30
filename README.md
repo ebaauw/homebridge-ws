@@ -71,7 +71,7 @@ Furthermore, you need to specify your OpenWeatherMap [API key](https://openweath
   ]
 ```
 
-To expose weather forecasts, set `"dailyForecasts": `_d_ (with _d_ between 1 and 7) or `"hourlyForcasts":` _h_ (with _h_ between 1 and 47) in config.json.
+To expose weather forecasts, set `"dailyForecasts": `_d_ (with _d_ between 1 and 7) or `"hourlyForecasts":` _h_ (with _h_ between 1 and 47) in config.json.
 When either has been set, Homebridge WS exposes an additional _Forecast_ accessory per location, with a Leak Sensor service per forecast.
 Home will only show _Leak Detected_ per forecast, in Eve you can see the full weather reports.
 
