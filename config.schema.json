@@ -9,16 +9,16 @@
     "properties": {
       "name": {
         "title": "Name",
-	      "description": "Plugin name as displayed in the homebridge log.",
+        "description": "Plugin name as displayed in the Homebridge log.",
         "type": "string",
         "required": true,
         "default": "Weather"
       },
       "apikey": {
         "title": "API key",
-	      "description": "OpenWeatherMap API key (see below).",
+        "description": "OpenWeatherMap API key (see below).",
         "type": "string",
-	      "required": true,
+        "required": true,
         "pattern": "^[0-9a-f]{32}$"
       },
       "cityIds": {
@@ -49,7 +49,7 @@
       "locations": {
         "title": "City Name",
         "type": "array",
-	      "required": true,
+        "required": true,
         "items": {
           "title": "City Name",
           "description": "OpenWeatherMap city name (see below).",
@@ -63,7 +63,7 @@
       },
       "timeout": {
         "title": "Timeout",
-	      "description": "Timeout in seconds.  Default: 15.",
+        "description": "Timeout in seconds.  Default: 15.",
         "type": "integer",
         "minimum": 1,
         "maximum": 60
