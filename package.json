@@ -13,10 +13,10 @@
   "main": "index.js",
   "engines": {
     "homebridge": "^1.4.0",
-    "node": "^16.13.2"
+    "node": "^16.14.0"
   },
   "dependencies": {
-    "homebridge-lib": "~5.2.0"
+    "homebridge-lib": "~5.2.3"
   },
   "scripts": {
     "prepare": "standard",
