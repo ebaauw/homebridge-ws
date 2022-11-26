@@ -12,11 +12,11 @@
   ],
   "main": "index.js",
   "engines": {
-    "homebridge": "^1.5.1",
+    "homebridge": "^1.6.0",
     "node": "^18.12.1"
   },
   "dependencies": {
-    "homebridge-lib": "~6.0.1"
+    "homebridge-lib": "~6.0.2"
   },
   "scripts": {
     "prepare": "standard",
