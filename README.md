@@ -21,14 +21,15 @@ Copyright © 2018-2023 Erik Baauw. All rights reserved.
 This [Homebridge](https://github.com/homebridge/homebridge) plugin exposes one or more virtual weather stations to Apple's [HomeKit](http://www.apple.com/ios/home/).
 The weather is obtained from [OpenWeatherMap](https://openweathermap.org).
 
-Each weather station is exposed as a separate accessory, mimicking an Eve Degree, with separate services for Temperature, Humidity, and Air Pressure.
-In addition, Homebridge WS provides a Leak Sensor service, to receive HomeKit notifications for rain or snow.
-The Leak Sensor service contains a full weather report, including observation time, conditions, clouds, rain, snow, wind, min/max temperature, UV index, visibility, sunrise, and sunset.
-The Temperature, Humidity, and Leak sensors are supported Apple's [Home](https://support.apple.com/en-us/HT204893) app and by Siri.
+Each weather station is exposed as a separate accessory, mimicking an Eve Weather, with separate services for Temperature, Humidity, and Air Pressure.
+In addition, Homebridge WS provides a Motion Sensor service, to receive HomeKit notifications for rain or snow.
+A custom Weather service contains a full weather report, including observation time, conditions, clouds, rain, snow, wind, min/max temperature, UV index, visibility, sunrise, and sunset.
+The Temperature, Humidity, and Motion sensors are supported Apple's [Home](https://support.apple.com/en-us/HT204893) app and by Siri.
 You need another HomeKit app, like [Eve](https://www.evehome.com/en/eve-app), for the Air Pressure sensor and the full weather report
-In Eve, you also get history for Temperature, Humidity and Air Pressure.
+In Eve, you also get history for Temperature, Humidity, Air Pressure, and Motion (rain or snow).
 
-Optionally, Homebridge WS exposes a second _Forecast_ accessory per location, with a Leak Sensor service per hourly or daily forecast.
+Optionally, Homebridge WS exposes a second _Forecast_ accessory per location, with a Motion Sensor service per hourly or daily forecast.
+This service includes the full weather report as well as temperature, humidity, and air pressure.
 
 There are many other weather station plugins out there.
 I created this one for fun and for testing plugin designs.
