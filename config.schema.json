@@ -56,11 +56,6 @@
           "type": "string"
         }
       },
-      "noLeak": {
-        "title": "No Leak",
-        "description": "Do not set Leak Detected.  Default: false.",
-        "type": "boolean"
-      },
       "timeout": {
         "title": "Timeout",
         "description": "Timeout in seconds.  Default: 15.",
@@ -119,7 +114,6 @@
     },
     "dailyForecasts",
     "hourlyForecasts",
-    "noLeak",
     {
       "type": "fieldset",
       "expandable": true,
