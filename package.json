@@ -16,7 +16,7 @@
     "node": "^18.13.0"
   },
   "dependencies": {
-    "homebridge-lib": "~6.2.2"
+    "homebridge-lib": "~6.3.0"
   },
   "scripts": {
     "prepare": "standard",
