@@ -46,6 +46,11 @@
         "minimum": 0,
         "maximum": 47
       },
+      "leakSensor": {
+        "title": "Expose Leak Sensor",
+        "description": "Expose rain (or snow) through an additional Leak Sensor.  Default: false.",
+        "type": "boolean"
+      },
       "locations": {
         "title": "City Name",
         "type": "array",
@@ -114,6 +119,7 @@
     },
     "dailyForecasts",
     "hourlyForecasts",
+    "leakSensor",
     {
       "type": "fieldset",
       "expandable": true,
