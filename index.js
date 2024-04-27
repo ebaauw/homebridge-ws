@@ -5,10 +5,15 @@
 
 'use strict'
 
+import { createRequire } from 'node:module'
+
 import { WsPlatform } from './lib/WsPlatform.js'
 
+const require = createRequire(import.meta.url)
+const packageJson = require('./package.json')
+
 function main (homebridge) {
-  WsPlatform.loadPlatform(homebridge, import.meta.dirname, 'WS', WsPlatform)
+  WsPlatform.loadPlatform(homebridge, packageJson, 'WS', WsPlatform)
 }
 
 export { main as default }
