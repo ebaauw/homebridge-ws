@@ -3,8 +3,6 @@
 //
 // Homebridge plugin for virtual weather station.
 
-'use strict'
-
 import { createRequire } from 'node:module'
 
 import { WsPlatform } from './lib/WsPlatform.js'
