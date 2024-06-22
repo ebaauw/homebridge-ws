@@ -3,6 +3,9 @@
   "description": "Homebridge plugin for virtual weather station",
   "displayName": "Homebridge WS",
   "author": "Erik Baauw",
+  "maintainers": [
+    "ebaauw"
+  ],
   "license": "Apache-2.0",
   "version": "2.7.23",
   "keywords": [
