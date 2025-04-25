@@ -20,7 +20,7 @@
     "node": "^22||^20||^18"
   },
   "dependencies": {
-    "homebridge-lib": "~7.1.4"
+    "homebridge-lib": "~7.1.5"
   },
   "scripts": {
     "prepare": "standard",
