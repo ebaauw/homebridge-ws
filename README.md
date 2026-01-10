@@ -16,7 +16,7 @@
 </span>
 
 ## Homebridge plugin for virtual weather station
-Copyright © 2018-2025 Erik Baauw. All rights reserved.
+Copyright © 2018-2026 Erik Baauw. All rights reserved.
 
 This [Homebridge](https://github.com/homebridge/homebridge) plugin exposes one or more virtual weather stations to Apple's [HomeKit](http://www.apple.com/ios/home/).
 The weather is obtained from [OpenWeatherMap](https://openweathermap.org).
