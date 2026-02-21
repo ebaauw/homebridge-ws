@@ -24,7 +24,6 @@
       "cityIds": {
         "title": "City ID",
         "type": "array",
-        "required": true,
         "items": {
           "title": "City ID",
           "description": "OpenWeatherMap city ID (see below).",
@@ -54,7 +53,6 @@
       "locations": {
         "title": "City Name",
         "type": "array",
-        "required": true,
         "items": {
           "title": "City Name",
           "description": "OpenWeatherMap city name (see below).",
