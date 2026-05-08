@@ -16,11 +16,11 @@
   "type": "module",
   "main": "index.js",
   "engines": {
-    "homebridge": "^2.0.0",
+    "homebridge": "^2.0.1",
     "node": "^24||^22"
   },
   "dependencies": {
-    "homebridge-lib": "~8.0.1"
+    "homebridge-lib": "~8.1.0"
   },
   "scripts": {
     "prepare": "standard",
