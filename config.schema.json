@@ -59,6 +59,15 @@
           "type": "string"
         }
       },
+      "onecallVersion": {
+        "title": "One Call API Version",
+        "description": "One Call API version to use.  Default: automatic detection.",
+        "type": "string",
+        "oneOf": [
+          { "title": "3.0", "enum": ["3.0"] },
+          { "title": "4.0", "enum": ["4.0"] }
+        ]
+      },
       "timeout": {
         "title": "Timeout",
         "description": "Timeout in seconds.  Default: 15.",
@@ -124,6 +133,7 @@
       "title": "Advanced Settings",
       "description": "Don't change these, unless you understand what you're doing.",
       "items": [
+        "onecallVersion",
         "timeout"
       ]
     }
