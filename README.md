@@ -37,8 +37,8 @@ In particular, this plugin is the launching plugin for [homebridge-lib](https://
 
 ### Prerequisites
 You need to obtain an [API key](https://openweathermap.org/price) from OpenWeatherMap.
-As Homebridge WS uses the `onecall` API endpoint, a _One Call by Call_ subscription plan is needed for new API keys.
-Old API keys under the the _Free_ plan of the _Current weather and forecasts collection_ still work, but new API keys need the _One Call by Call_ plan.
+As Homebridge WS uses the 3.0 `onecall` API endpoint, a _One Call by Call_ 3.0 subscription plan is needed.
+Note that Homebridge WS does not work with the newer _One Call by Call_ 4.0 subscription.
 
 You need a server to run Homebridge.
 This can be anything running [Node.js](https://nodejs.org): from a Raspberry Pi, a NAS system, or an always-on PC running Linux, macOS, or Windows.
