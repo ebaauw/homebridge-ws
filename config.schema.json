@@ -21,6 +21,13 @@
         "required": true,
         "pattern": "^[0-9a-f]{32}$"
       },
+      "apiVersion": {
+        "title": "API version",
+        "description": "OpenWeatherMap API version (3 or 4).  Default: 3.",
+        "type": "integer",
+        "minimum": 3,
+        "maximum": 4
+      },
       "cityIds": {
         "title": "City ID",
         "type": "array",
