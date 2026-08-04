@@ -78,6 +78,7 @@
   "form": [
     "name",
     "apikey",
+    "apiVersion",
     {
       "type": "help",
       "helpvalue": "City Names <strong class='text-danger'>*</strong>"
