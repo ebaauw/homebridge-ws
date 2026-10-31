@@ -17,10 +17,10 @@
   "main": "index.js",
   "engines": {
     "homebridge": "^2.4.0",
-    "node": "^24||^22"
+    "node": "^26||^24||^22"
   },
   "dependencies": {
-    "homebridge-lib": "~8.1.5"
+    "homebridge-lib": "~9.0.0-0"
   },
   "scripts": {
     "prepare": "standard",
